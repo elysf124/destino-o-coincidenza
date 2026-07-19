@@ -1,0 +1,429 @@
+body {
+    background-color: #0b0f0d;
+    color: #e8e8e8;
+    font-family: monospace;
+    text-align: center;
+}
+
+
+.hud {
+    border: 2px solid #555;
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+
+.top-bar {
+    text-align: left;
+    font-size: 14px;
+    color: #8aff80;
+    border-bottom: 1px solid #555;
+    padding-bottom: 15px;
+}
+
+
+.mission {
+    margin-top: 50px;
+}
+
+
+h1 {
+    font-size: 45px;
+    letter-spacing: 4px;
+}
+
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+button {
+    margin-top: 30px;
+    padding: 15px 40px;
+    background-color: transparent;
+    color: #8aff80;
+    border: 2px solid #8aff80;
+    font-family: monospace;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #8aff80;
+    color: #0b0f0d;
+}
+/* ------------------------- */
+/* FINAL BIRTHDAY MODE */
+/* ------------------------- */
+
+
+.birthday-mode {
+
+    background: linear-gradient(135deg, #fff3b0, #ffd6e8);
+
+    color: #5a3d3d;
+
+    min-height: 100vh;
+
+    font-family: 'Comic Sans MS', cursive;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+/* contenitore finale */
+
+.birthday-card {
+
+    background: rgba(255, 255, 255, 0.8);
+
+    width: 80%;
+
+    max-width: 600px;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* titolo */
+
+.birthday-card h1 {
+
+    color: #ff8fab;
+
+    font-size: 40px;
+
+}
+
+
+
+/* sottotitoli */
+
+.birthday-card h2 {
+
+    color: #f4a261;
+
+}
+
+
+
+/* testo */
+
+.birthday-card p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* pulsante finale */
+
+.birthday-button {
+
+    background: #ff8fab;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 25px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    transition: 0.3s;
+
+}
+
+
+
+.birthday-button:hover {
+
+    transform: scale(1.05);
+
+}
+.memory-image {
+
+    width: 25%;
+
+    max-width: 180px;
+
+    padding: 8px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    margin: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+.map-marker {
+
+    position: absolute;
+
+    border: none;
+
+    border-radius: 50%;
+
+    width: 45px;
+
+    height: 45px;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+}
+
+
+
+/* colori diversi */
+
+
+.spezia {
+
+    background: #ff9f9f;
+
+    top: 130%;
+
+    left: 30%;
+
+}
+
+
+
+.belluno-main {
+
+    background: #9fc9ff;
+
+    top: 60%;
+
+    left: 60%;
+
+}
+
+
+
+.nevegal {
+
+    background: #ffffff;
+
+    top: 80%;
+
+    left: 64%;
+
+}
+
+
+
+.fiume {
+
+    background: #7ddcff;
+
+    top: 44%;
+
+    left: 42%;
+
+}
+
+
+
+.its {
+
+    background: #ffd66b;
+
+    top: 62%;
+
+    left: 50%;
+
+}
+
+
+
+.gelato {
+
+    background: #ffb6df;
+
+    top: 68%;
+
+    left: 50%;
+
+}
+.map-image {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    border-radius: 20px;
+
+    display: block;
+
+    margin: auto;
+
+}
+.map-marker{
+
+    position:absolute;
+
+    width:35px;
+
+    height:35px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ff5c8a;
+
+    color:white;
+
+    font-weight:bold;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+}
+
+.map-marker:hover{
+
+    transform:scale(1.2);
+
+}
+/* ------------------------- */
+/* MAP POPUP */
+/* ------------------------- */
+
+
+.map-popup {
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.45);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+
+
+.popup-content {
+
+    background: #FFF2B8;
+
+    width: 80%;
+
+    max-width: 400px;
+
+    padding: 30px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+    border: 3px solid #F7A6C2;
+    animation: popupAppear 0.3s ease;
+}
+
+
+.popup-content h2 {
+
+    color: #E56B9F;
+
+    font-size: 26px;
+
+
+}
+
+
+.popup-content p {
+
+    color: #D85A91;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+}
+
+
+.popup-content .birthday-button {
+
+    background: #F7A6C2;
+
+    color: white;
+
+    border: none;
+
+}
+
+@keyframes popupAppear {
+
+    from {
+
+        transform: scale(0.8);
+
+        opacity:0;
+
+    }
+
+
+    to {
+
+        transform: scale(1);
+
+        opacity:1;
+
+    }
+
+}
